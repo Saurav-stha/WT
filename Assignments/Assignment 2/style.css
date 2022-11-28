@@ -1,0 +1,35 @@
+div{
+    text-align: center;
+}
+h1{
+    background-color: hsl(120,50%,60%);
+    font-variant: small-caps;
+    font-weight: 300;
+}
+h3{
+    background-color: beige;
+    
+    color: rgba(250, 0, 0, 0.9);
+}
+h3.one#pec{
+    margin:20px;
+    font-family: cursive;
+    font-style: italic;
+}
+.second{
+
+    font-weight: 200;
+    color: #ffff00;
+    background-color: grey;
+}
+#third{
+    font-style: oblique;
+    color: rgb(241, 87, 48);
+    background-color: #000000;
+}
+p#db{
+    text-decoration: line-through;
+}
+p{
+
+}
