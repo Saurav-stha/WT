@@ -6,12 +6,10 @@ h1{
     font-variant: small-caps;
     font-weight: 300;
 }
-h3{
-    background-color: beige;
-    
-    color: rgba(250, 0, 0, 0.9);
-}
-h3.one#pec{
+
+h2.one#pec{
+    background-color: #000000;
+    color: rgba(250, 0, 0, 0.9);    
     margin:20px;
     font-family: cursive;
     font-style: italic;
@@ -25,11 +23,16 @@ h3.one#pec{
 #third{
     font-style: oblique;
     color: rgb(241, 87, 48);
-    background-color: #000000;
+    background-color:beige;
 }
 p#db{
     text-decoration: line-through;
 }
 p{
-
+    text-align: center;
+    font-family: fantasy;
+}
+span p{
+    color: #0000ff ;
+    background-color: hsla(240,90%,80%,90%);
 }
