@@ -37,6 +37,7 @@ p{
     font-family: fantasy;
 }
 span p{
+    line-height: 2;
     color: #0000ff ;
     background-color: hsla(240,90%,80%,90%);
 }
