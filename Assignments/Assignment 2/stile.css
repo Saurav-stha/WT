@@ -1,0 +1,36 @@
+div{
+    color:aliceblue;
+    text-align: center;
+    
+}
+h1{
+    font-weight: 300;
+    font-family: fantasy;
+    background-color: rgb(128, 17, 128);
+}
+a:hover{
+    text-decoration: none;
+    -webkit-text-stroke-color: #00ffff;
+}
+a{
+    color:#faebd7;
+    
+}
+p{
+    color: hsl(208, 100%, 97%);
+    font-style: italic;
+}
+
+h3{
+    display: inline-block;
+    margin-top: 100px;
+
+}
+h3:hover{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: grey;
+}
+footer{
+    line-height: 2;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

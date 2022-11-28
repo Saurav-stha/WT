@@ -9,10 +9,10 @@ h1{
 h2:hover{
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #ffffffb9;
-    
+      
 }
 h2.one#pec{
-    background-color: #000000;
+    /* background-color: #000000; */
     color: rgba(250, 0, 0, 0.9);    
     margin:20px;
     font-family: cursive;
