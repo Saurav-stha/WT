@@ -2,9 +2,6 @@ h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
 }
-section{
-    text-align: center;
-}
 body button{
     font-family: 'Gill Sans', Calibri,  sans-serif;
     font-weight: 500;
@@ -20,6 +17,16 @@ span{
 div{
     padding: 18px;
 }
+.pl{
+    display: block;
+    color:white;
+    padding:5px 15px;
+    font-size: 25px;
+    margin :15px 5px;
+    background-color: #26be96;
+    border-radius: 40px;    
+}
+
 .primary{
     color:hsl(0, 0%, 100%);
     background-color: #26be96;
@@ -50,6 +57,9 @@ div{
 .def:hover{
     color:#26BE96;
     border : solid 2px;
+}.def:active{
+    color:white;
+    background-color: #66d1b5;
 }
 .hov{
     color:#26BE96;
@@ -136,23 +146,19 @@ div{
 }
 
 .primary-bg{
-    border-bottom: inset #ffffff;
     background-color: #ffffff;
     color: #49C8A7;
 }
 .def5{
-    border-bottom: inset #FFFFFF;
     background-color: #FFFFFF;
     color: #49C8A7;
 }
-.def5.hover{
+.def5:hover{
     border-bottom: inset #99E0CE;
-
+    background-color: #FFFFFF;
 }
 .def5:active{
-    border-bottom: inset #BEEBDF;
     background-color: #BEEBDF;
-    color: #13B78D;
 }
 .hov5
 {
