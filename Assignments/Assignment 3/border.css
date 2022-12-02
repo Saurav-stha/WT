@@ -1,0 +1,42 @@
+button{
+    color:black;
+    background-color: white;
+    padding:10px 40px;
+    margin: 10px 30px;
+    font-size: larger;
+}
+span{
+    display: flex;
+    flex-direction: column;
+}
+
+.dot{
+    border: 2px dotted;
+}
+.dash{
+    border: 3px dashed;
+}
+.solid{
+    border: 2px solid;
+}
+.double{
+    border: 4px double;
+}
+.groove{
+    border: 3px groove;
+}
+.ridge{
+    border: 3px ridge;
+}
+.inset{
+    border: 3px inset;
+}
+.outset{
+    border: 3px outset;
+}
+.none{
+    border:none;
+}
+.hidden{
+    border: hidden;
+}
