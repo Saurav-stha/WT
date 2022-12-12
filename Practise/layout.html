@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 1300px;
+            height: 625px;
+            border: 2px solid red;
+            position: relative;
+        }
+        .box2{
+            margin-left: 50px;
+            margin-top: 50px;
+            width: 1200px;
+            height: 525px;
+            border: 2px solid blue;
+            position: absolute;
+        }.box3{
+            margin-left: 50px;
+            margin-top: 50px;
+            width:1100px;
+            height: 425px;
+            border: 2px solid green;
+            position: absolute;
+        }.box4{
+            margin-left: 50px;
+            margin-top: 50px;
+            width:1000px;
+            height: 325px;
+            border: 2px solid brown;
+            position: absolute;
+        }.box5{
+            margin-left: 50px;
+            margin-top: 50px;
+            width:900px;
+            height: 225px;
+            border: 2px  solid black;
+            position: relative;
+        }
+
+        .circle{
+            border-radius: 100%;
+        }
+        .b1lt{
+            left:0px;
+            top:0px;
+            border: 20px solid blue;
+            position: absolute;
+        }
+        .b1rd{
+            right:0px;
+            bottom:0px;
+            border: 20px solid blue;
+            position: absolute;
+        }
+        .b2ld{
+            left:0px;
+            bottom: 0px;
+            border: 20px solid green;
+            position: absolute;
+        }
+        .b2rt{
+            right:0px;
+            top:0px;
+            border: 20px solid green;
+            position: absolute;
+        }
+        .b3lt{
+            left:0px;
+            top:0px;
+            border: 20px solid brown;
+            position: absolute;
+        }
+        .b3rd{
+            right:0px;
+            bottom:0px;
+            border: 20px solid brown;
+            position: absolute;
+        }
+        .b4ld{
+            left:0px;
+            bottom: 0px;
+            border: 20px solid black;
+            position: absolute;
+        }
+        .b4rt{
+            right:0px;
+            top:0px;
+            border: 20px solid black;
+            position: absolute;
+        }
+        .b5lt{
+            left:0px;
+            top:0px;
+            border: 20px solid red;
+            position: absolute;
+        }
+        .b5rd{
+            right:0px;
+            bottom:0px;
+            border: 20px solid red;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="circle b1lt"></div>
+        <div class="circle b1rd"></div>
+        <div class="box2">
+            <div class="circle b2ld"></div>
+            <div class="circle b2rt"></div>
+            <div class="box3">
+                <div class="circle b3lt"></div>
+                <div class="circle b3rd"></div>
+                <div class="box4">
+                    <div class="circle b4ld"></div>
+                    <div class="circle b4rt"></div>
+                    <div class="box5">
+                        <div class="circle b5lt"></div>
+                        <div class="circle b5rd"></div>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
