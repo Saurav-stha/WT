@@ -29,6 +29,7 @@ button.cont{
 div.texts{
     width: 600px;
     margin: 30px;
+    padding-bottom: 50px
 }
 p{
     font-weight: bolder;
@@ -43,7 +44,7 @@ p{
 }
 img{
     position: absolute;
-    left: 720px;
+    left: 750px;
     top: 180px;
     border-radius: 10px;
 }
@@ -68,4 +69,7 @@ button.ju{
     height: 35px;
     padding: 5px 12px;
     font-size: large;
+}
+.last_point{
+    margin-bottom:40px;
 }
