@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: beige;
+            color: blue;
+            text-align: center;
+        }
+        main{
+            position: absolute;
+            margin:5% 40%;
+            border: 3px solid black;
+            border-radius: 5px;
+        }
+        input{
+            margin: 1.4%; 
+            width:19em;
+            height: 5em;
+            font-size: 14px;
+        }
+        button{
+            width: 20px;  
+            background-color: beige;  
+            color: rgb(0, 0, 0);  
+            border: 3px solid gray;  
+            border-radius: 5px;  
+            padding: 26px;  
+            margin: 5px;  
+            font-size: 15px;
+        }
+        button:active{
+            background-color: grey;
+        }
+        #clear{
+            width: 96%;
+        }
+    </style>
+    <script>
+        function display(ele){
+            document.getElementById("answer").value+=ele.innerHTML;
+        }
+        function equalTo(){
+            document.getElementById("answer").value=eval(document.getElementById("answer").value);
+        }
+        function clearing(){
+            document.getElementById("answer").value="";
+        }
+    </script>
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <main>
+        <input id="answer"><br><br>
+        <button id="one" onclick="display(this)">1</button>
+        <button id="two" onclick="display(this)">2</button>
+        <button id="three" onclick="display(this)">3</button>
+        <button id="plus" onclick="display(this)">+</button>
+        <br>
+        <button id="four" onclick="display(this)">4</button>
+        <button id="five" onclick="display(this)">5</button>
+        <button id="six" onclick="display(this)">6</button>
+        <button id="minus" onclick="display(this)">-</button>
+        <br>
+        <button id="minus" onclick="display(this)">7</button>
+        <button id="minus" onclick="display(this)">8</button>
+        <button id="minus" onclick="display(this)">9</button>
+        <button id="minus" onclick="display(this)">*</button>
+        <br>
+        <button id="minus" onclick="display(this)">.</button>
+        <button id="minus" onclick="display(this)">0</button>
+        <button id="minus" onclick="display(this)">/</button>        
+        <button id="eq" onclick="equalTo()">=</button>
+        <br>
+        <button id="clear" onclick="clearing()">Clear</button>
+    </main>
+</body>
+</html>
