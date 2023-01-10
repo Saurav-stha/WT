@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascending or Descending?</title>
+</head>
+<body>
+    <script>
+        let arr=[3,2,5,4,1];
+        let choice=prompt("Enter asc for ascending or desc for descending: ");
+        document.write("THe array is: "+ arr+ "<br>");
+        
+        let sorted_arr=arr.sort();
+        if (choice=="asc"){
+            document.write("In ascending order: " + sorted_arr);
+        }
+        else if(choice=="desc"){
+            document.write("In descending order: "+sorted_arr.reverse());
+        }else{
+            alert("Enter asc or desc..");
+        }
+    </script>
+</body>
+</html>
