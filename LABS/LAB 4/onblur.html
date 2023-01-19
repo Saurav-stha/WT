@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Password</title>
+</head>
+<body>
+    <!-- <form action="next.html" id="search-form">
+        <label >Password: </label>
+        <input id="pw" type="password" placeholder="Enter Password"/>
+        <button id="submit" onblur="check()">Submit</button>
+    </form> -->
+    <form action="next.html" method="POST" id="search-form">
+        <input type="text" name="search" id="search" placeholder="Enter Password" />
+        <input type="submit" value="Submit"> 
+    </form>
+    
+    <script type="text/javascript">
+        document.getElementById("search-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            var x=document.getElementById("search").value;
+            if (document.getElementById("search").value == "") {
+                alert("Empty input");
+                
+            // if else(document.getElementById("search").value==1){
+            //     alert("Should not contain numerical values.");
+            // }
+            
+            }else {
+                event.currentTarget.submit();
+            }
+            
+        })
+        
+    
+            // let x=document.getElementById("pw").value;  
+
+            // if (x=" "){
+            //      alert("Do not leave blank.");
+            //    event.preventDefault();}
+    </script>
+</body>
+</html>

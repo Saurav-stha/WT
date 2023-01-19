@@ -4,6 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRY</title>
+</head>
+<body>
+    <form action="next.html">
+        <input type="text" id="search" placeholder="Enter password">
+        <button onclick="check()">Submit</button>
+    </form>
+    <script>
+        // window.onload = function(){
+        //   console.log('Page load event fired!');
+        // }
+        function check(){
+            var x=document.getElementById("search").value;
+            if (isNaN(x)) 
+            {
+                alert("Must input numbers");
+                return false;
+            }
+        }
+      </script>
+      
+</body>
+</html>
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
         function billingFunction(){
@@ -86,4 +121,4 @@
         <div>nth</div>
     </span>
 </body>
-</html> -->
+</html> --> -->
