@@ -21,11 +21,12 @@ if (!isset($_SESSION['user'])){
             background-color: rgb(56,57,59);
         }
         main{
+            background-color: #242526;
+            padding: 15px 0;
             font-family: Arial, Helvetica, sans-serif;
             display: flex;
             justify-content: space-around;
             align-items: center;
-            margin-top: 2vh;
         }
        
         div img{
@@ -71,6 +72,10 @@ if (!isset($_SESSION['user'])){
             color: whitesmoke;
             padding:12px;
             border-radius:10px;
+        }
+        button a:hover{
+            background-color: whitesmoke;
+            color:black;
         }
         h1#wel{
             margin-top: 10%;    
