@@ -18,11 +18,12 @@
     </form>
     
     <script type="text/javascript">
-        document.getElementById("search-form").addEventListener("submit", function (event) {
+        document.getElementById("search").addEventListener("blur", function (event) {
             event.preventDefault();
             var x=document.getElementById("search").value;
             if (document.getElementById("search").value == "") {
                 alert("Empty input");
+
                 
             // if else(document.getElementById("search").value==1){
             //     alert("Should not contain numerical values.");

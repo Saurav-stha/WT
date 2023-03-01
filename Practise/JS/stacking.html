@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Stacking</title>
+	<style type="text/css">
+		div {
+			width: 200px;
+			height: 200px;
+		}
+
+		.one {
+			background-color: red;
+			position: relative;
+		}
+
+	    .two {
+			background-color: blue;
+			position: absolute;
+			top: 50px;
+			left: 50px;
+		}
+
+		.three {
+			background-color: yellow;
+			position: absolute;
+			top: 100px;
+			left: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="one" onclick="stacking('one','two','three')"></div>
+	<div class="two" onclick="stacking('two','three','one')"></div>
+	<div class="three" onclick="stacking('three','one','two')"></div>
+
+	<script type="text/javascript">
+		function stacking(class1,class2,class3)
+		{
+            document.getElementsByClassName(class1)[0].style.zIndex="2";
+            document.getElementsByClassName(class2)[0].style.zIndex="0";
+            document.getElementsByClassName(class3)[0].style.zIndex="0";
+		}
+	</script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<head>
+    <title></title>
+    <style>
+        div{
+            height:340px;
+            width: 340px;
+            position: absolute;
+        }
+        .one{
+            background-color: blue;
+        }
+        .two{
+            background-color: red;
+            margin: 40px;
+        }
+        .three{
+            background-color: green;
+            margin:80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one" style="background-color: blue;">soeing</div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <script>
+        const divEl = document.querySelectorAll("div");
+
+        for (el of divEl){
+            console.log(el);
+            el.addEventListener("click",change,true);
+        }
+        function change(e){
+            console.log(e.style.backgroundColor);
+        
+        }
+
+        // let divs=document.getElementsByTagName("div");
+        // for (i=0;i<3;i++){
+        //     divs[i].addEventListener("click",function(){
+        //         divs[i].style.backgroundColor="black";
+        //     });
+        // }
+    </script>
+</body> -->

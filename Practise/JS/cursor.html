@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+
+</head>
+<body>
+    <p>
+        <h1>Mouse Coordinate:</h1>
+        <p id="xco">CLIENTX: </p>
+        <p id="yco">CLIENTY: </p>
+        <br>
+        <!-- <p id="xco1">SCREEN X: </p>
+        <p id="yco1">SCREEN Y: </p> -->
+    </p>
+    <script>
+        let x=document.getElementById("xco");
+        let y=document.getElementById("yco");
+        // let x1=document.getElementById("xco1");
+        // let y1=document.getElementById("yco1");
+
+        document.addEventListener("mouseup",show);
+
+        function show(e){
+            x.innerHTML="CLIENT X: "+e.clientX;
+            y.innerHTML="CLIENT Y: " +e.clientY;
+            // x1.innerText= e.screenx;
+            // y1.innerText=e.screeny
+
+
+        }
+    </script>
+
+</body>
+</html>
